@@ -1,0 +1,16 @@
+
+    node{
+        stage("Build"){
+             echo "This is a build stage"
+        }
+        stage("Test"){
+             echo "This is a Test stage" 
+        }
+    }
+
+     node{
+        stage("Deploy"){
+             echo "This is a Deploy stage"
+        }
+        
+    }
