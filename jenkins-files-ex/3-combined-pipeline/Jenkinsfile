@@ -1,3 +1,10 @@
+    node{
+        stage("Init"){
+             echo "This is a build stage"
+        }
+       
+    }
+
 pipeline{
     agent any
     stages{
@@ -5,21 +12,23 @@ pipeline{
             steps{
              echo "This is a build stage"
             }
-
         }
         stage("Test"){
             steps{
              echo "This is a Test stage"
             }
-
         }
         stage("Deploy"){
-
              steps{
-             echo "This is a deploy stage"
+                echo "This is a deploy stage"
             }
-
         }
     }
-
 }
+
+    node{
+        stage("Post Deploy"){
+             echo "This is a build stage"
+        }
+       
+    }

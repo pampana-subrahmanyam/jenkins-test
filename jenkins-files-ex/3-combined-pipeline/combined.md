@@ -1,0 +1,1 @@
+You can combined both declarative and scripted in the same file
